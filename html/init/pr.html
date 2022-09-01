@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/inint/init.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+    <body>
+        <div class="first-content">
+            <h1 class=first-text>Boas-Vindas <span style="color: orange;">Professor Renato!</span></h1>
+        </div>
+        <div class="div-label-desc">
+            <p class="label-desc">Resumo:</p>
+        </div>
+        <div class="div-desc">
+            <p class="desc">Sthephanie Medeiros é uma aluna de 15 anos que estuda no Martin Afonso. Ela levava uma vida tranquila, era muito amiga de todos de sua classe, realmente uma pessoa adorável. Sthephanie tinha uma melhor amiga chamada Andreia, na qual elas duas sempre voltavam da escola para casa juntas porém, na noite de 31 de Outubro essa Jovem desapareceu misteriosamente durante a festa de halloween do colégio. Seu objetivo é encontrar pistas para descobrir o paradeiro dessa jovem, procure pistas dentro da classe para descobrir onde e como está Sthephanie Medeiros.</p>
+        </div>
+        <div class="div-checkbox">
+            <input type="checkbox" class="checkbox" id="check" onchange="enable(this);">
+            <label for="checkbox" class="checkbox-label">Eu li e estou ciente da <span style="color: orange;">história</span> por trás do jogo.</label>
+        </div>
+        <div class="div-btn">
+            <input type="button" class="btn-unchecked" id="btnInit" value="Começar!" onclick="run();">
+        </div>
+
+    </body>
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+           <!-- HTML DA ANIMAÇÃO DO PRELOADER! -->
+           <img src="../../img/load.gif">
+        </div>
+    </div>
+    <!-- fim do preloader --> 
+    
+    <script src="../../js/preloader.js"></script>
+    <script src="../../js/btn.js"></script>
+</html>

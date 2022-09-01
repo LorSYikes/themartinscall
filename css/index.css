@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+.img-content img{
+    margin-top: 40px;
+    width: 120px;
+}
+
+.img-content{
+    display: flex;
+    justify-content: center;
+}
+
+/* Login Area */
+
+#login-area-div{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-area{
+    text-align: center;
+}
+
+.login-area input{
+    margin: 30px auto;
+    display: block;
+    width: 250px;
+    color: white;
+    transition: 0,5s;
+    outline: none;
+    
+}
+
+.login-area input:focus{
+    border-bottom: 1px solid orange;
+
+}
+
+.login-area h3{
+    color: rgba(206, 206, 206, 0.533);
+    margin-bottom: 30px;
+    margin-right: 200px;
+}
+
+.input-login{
+    background-color: black;
+    border-bottom: 1px solid white;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding: 30px 20px;
+    outline: none;
+    transition: 0.5s;
+}
+
+.input-login:focus{
+    border-bottom: 1px solid orange;
+}
+
+
+.login-area #login-button{
+    background-color: orange;
+    border: none;
+    padding: 20px 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.erro-msg{
+    color: red;
+    background-color: rgb(90, 25, 25);
+}
+
+.fa-eye{
+    color: orange;
+    position: absolute;
+    margin-top: -75px;
+    margin-left: 120px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+  /* ini: Preloader */
+ 
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: black; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+/* end: Preloader */

@@ -1,25 +1,24 @@
 function login(){
     var id = document.getElementById('id').value;
-    var senha = document.getElementById('password').value;
-    let errormsg = document.querySelector('#erro')
+    var senha = document.getElementById('senha').value;
 
-    if(id == "123" && senha == "123"){
-        alert('Sucesso')
-    }else{
-      return
+    //Logins =
+    if(id == "grupo1@themartinscall.com" && senha == "657382811"){
+        window.location.href = "./html/init/g1.html"
     }
     
-    if(id == ''){
-        errormsg.setAttribute('style', 'visibility: visible')
-        errormsg.innerHTML = 'Preencha todos os campos corretamente.'
+    if(id == "professor.renato@themartinscall.com" && senha == "461283701"){
+        window.location.href = "./html/init/pr.html"
+    }else {
+        errormsg.innerHTML = "Credenciais incorretas!"
     }
-
+    
 }
 
-var btn = document.querySelector('.fa-eye')
+var pass_btn = document.querySelector('.fa-eye')
 
-btn.addEventListener('click', ()=>{
-    let inputSenha = document.querySelector('#password')
+pass_btn.addEventListener('click', ()=>{
+    let inputSenha = document.querySelector('#senha')
 
     if(inputSenha.getAttribute('type') == 'password'){
         inputSenha.setAttribute('type', 'text')
@@ -27,4 +26,3 @@ btn.addEventListener('click', ()=>{
         inputSenha.setAttribute('type', 'password')
     }
 })
-

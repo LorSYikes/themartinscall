@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+}
+
+.first-text{
+  color: white;
+  text-align: center;
+}
+
+.first-content{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.label-desc{
+  margin-top: 50px;
+  color: white;
+  position: absolute;
+  text-decoration: underline;
+}
+
+.div-label-desc{
+  display: flex;
+  justify-content: center;
+}
+
+.div-desc {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.desc{
+  color: rgb(180, 180, 180);
+  width: 400px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid orange;
+  border-radius: 8px;
+  font-size: 18px;
+  height: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.checkbox {
+  width: 20px;
+}
+
+.div-checkbox {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox-label {
+  color: white;
+  margin-left: 10px;
+}
+
+.div-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.btn-unchecked {
+  border-radius: 25px;
+  background-color: gray;
+  padding: 30px 100px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-checked {
+  border-radius: 25px;
+  background-color: orange;
+  padding: 30px 100px;
+  border: none;
+  cursor: not-allowed;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+
+#btnInit {
+  transition: 0.2s;
+}
+
+
+  /* ini: Preloader */
+ 
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: black; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+/* end: Preloader */
