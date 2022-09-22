@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+video::-webkit-media-controls {
+    display: none;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.main-container2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#l-btn {
+    margin-left: 30px;
+    padding: 20px 40px;
+    color: white;
+    background-color: orange;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#l-tbox{
+    text-align: center;
+    background-color: black;
+    border: 2px solid orange;
+    border-radius: 20px;
+    padding: 0px 50px;
+    color: orange;
+    transition: 0.5s;
+}
+
+.container {
+    color: white;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+
+.fa-solid {
+    font-size: 50px;
+    color: rgb(255, 192, 75);
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.p-label {
+    margin-left: 50px;
+    
+}
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: black; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+

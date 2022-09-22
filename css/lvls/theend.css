@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+}
+
+.main-container{
+    color: white;
+    margin-top: 30px;
+    height: ;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: orange;
+    font-weight: bold;
+}
+
+.main-text-container {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.text-container{
+    width: 400px;
+    font-size: 20px;
+    padding: 0px 10px;
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer {
+    font-size: 10px;
+}
+
+
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: black; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}

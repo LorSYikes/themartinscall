@@ -13,7 +13,7 @@ function validated(){
         ID.focus();
         return false;
     }
-    if(password.value.length < 10){
+    if(password.value.length < 9){
         password.style.border = "1px solid red"
         password.addEventListener('textInput', pass_verify)
         errormsg.innerHTML = "Digite a senha corretamente."

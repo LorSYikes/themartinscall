@@ -1,19 +1,21 @@
 let check = document.getElementById("check");
-let btn = document.getElementById("btnInit")
+var btn = document.getElementById("btnInit")
 
 
 function enable() {
     if(check.checked) {
-        btn.classList.remove("btn-unchecked")
-        btn.classList.add("btn-checked")
+        btn.classList.remove("btn-unchecked");
+        btn.classList.add("btn-checked");
+        btn.disabled = false
     }
     else {
-        btn.classList.remove("btn-checked")
-        btn.classList.add("btn-unchecked")
+        btn.classList.remove("btn-checked");
+        btn.classList.add("btn-unchecked");
+        btn.disabled = true
     }
     
 }
 
 function run(){
-    window.location.href = "../levels/betamsg.html"
+    window.location.href = "../lvls/a1.html"
 }
